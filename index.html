@@ -1,6 +1,55 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>super awesome website</title>
-        <h1>I require assisstance</h1>
-    </head>
+
+<head>
+    <title>http503 Home Page</title>
+
+</head>
+
+<body>
+    <header>
+        <!-- Logo -->
+        <img src="logo.png" alt="Your Logo" width="200">
+    </header>
+
+    <nav>
+        <!-- Navigation buttons -->
+        <a href="index.html">Home</a>
+        <a href="music.html">Music</a>
+        <a href="contact.html">Contact</a>
+        <a href="behindthescenes.html">Behind the Scenes</a>
+        <a href="teasers.html">Teasers</a>
+    </nav>
+
+    <div class="container">
+        <!-- Biography -->
+        <div class="bio">
+            <h2>Biography</h2>
+            <p>Hello! I don't really know what I'm doing</p>
+        </div>
+    </div>
+    
+
+
+
+    <footer>
+        <!-- Footer content -->
+        <p>&copy; 2023 Your Music Projects</p>
+    </footer>
+
+    <script>
+        // JavaScript for showing/hiding content based on navigation
+        const pages = ['home', 'music', 'contact', 'behindthescenes', 'teasers'];
+
+        pages.forEach(page => {
+            document.querySelector(`nav a[href='${page}.html']`).addEventListener('click', () => {
+                pages.forEach(p => {
+                    document.getElementById(p).style.display = 'none';
+                });
+                document.getElementById(page).style.display = 'block';
+            });
+        });
+    </script>
+</body>
+
 </html>
