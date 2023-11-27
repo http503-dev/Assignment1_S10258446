@@ -9,32 +9,53 @@ header {
     padding: 20px;
 }
 
-
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-li {
-    float: left;
-  }
-  
-li a {
-    display: block;
-    color: white;
+nav ul {
     text-align: center;
-    padding: 14px 16px;
+    margin: 20px 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li a {
     text-decoration: none;
-  }
-  
-  /* Change the link color to #111 (black) on hover */
-li a:hover {
-    background-color: #111;
-  }
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: 1px solid #000;
+    background-color: #eee;
+    color: #000;
+}
+
+nav ul li a:hover {
+    background-color: #ccc;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    z-index: 1;
+}
+
+.dropdown a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+.dropdown a:hover {
+    background-color: #ddd;
+}
+
+nav ul li:hover .dropdown {
+    display: block;
+}
 
 .active {
     background-color: #04AA6D;
