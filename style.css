@@ -44,7 +44,7 @@ li a:hover {
     margin: 20px;
 }
 
-.bio {
+.bio, .music, .contact, .bts, .teasers {
     text-align: center;
 }
 
