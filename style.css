@@ -1,6 +1,7 @@
 body {
     font-family: 'VT323', monospace;
     font-size: 24px;
+    color: pink;
     margin: 0;
     padding: 0;
     background-image: url('background.jpg');
@@ -41,6 +42,7 @@ nav ul li a {
 
 nav ul li a:hover {
     background-color: palevioletred;
+    color: #333;
 }
 
 .dropdown {
@@ -67,11 +69,15 @@ nav ul li:hover .dropdown {
 }
 
 .active {
-    background-color: darkcyan;
+    background-color: #333;
+    color: pink;
   }
 
 .container {
     margin: 20px;
+    background-color: #333; /* Change this to your desired color */
+    padding: 10px 0;
+    text-align: center;
 }
 
 .bio, .music, .contact, .bts, .teasers {
