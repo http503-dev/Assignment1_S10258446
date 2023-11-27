@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>http503 Teasers page</title>
+
+</head>
+
+<body>
+    <header>
+        <!-- Logo -->
+        <img src="logo.png" alt="Your Logo" width="200">
+    </header>
+
+    <nav>
+        <!-- Navigation buttons -->
+        <a href="index.html">Home</a>
+        <a href="music.html">Music</a>
+        <a href="contact.html">Contact</a>
+        <a href="behindthescenes.html">Behind the Scenes</a>
+        <a href="teasers.html">Teasers</a>
+    </nav>
+
+    <div class="container">
+        <!-- Teasers -->
+        <div class="teasers">
+            <h2>Teasers</h2>
+            <p>Does this count?</p>
+        </div>
+    </div>
+    
+
+
+
+    <footer>
+        <!-- Footer content -->
+        <p>&copy; 2023 Your Music Projects</p>
+    </footer>
+
+    <script>
+        // JavaScript for showing/hiding content based on navigation
+        const pages = ['home', 'music', 'contact', 'behindthescenes', 'teasers'];
+
+        pages.forEach(page => {
+            document.querySelector(`nav a[href='${page}.html']`).addEventListener('click', () => {
+                pages.forEach(p => {
+                    document.getElementById(p).style.display = 'none';
+                });
+                document.getElementById(page).style.display = 'block';
+            });
+        });
+    </script>
+</body>
+</html>
