@@ -54,19 +54,5 @@
         <!-- Footer content -->
         <p>&copy; unremarkble images</p>
     </footer>
-
-    <script>
-        // JavaScript for showing/hiding content based on navigation
-        const pages = ['home', 'music', 'contact', 'behindthescenes', 'teasers'];
-
-        pages.forEach(page => {
-            document.querySelector(`nav a[href='${page}.html']`).addEventListener('click', () => {
-                pages.forEach(p => {
-                    document.getElementById(p).style.display = 'none';
-                });
-                document.getElementById(page).style.display = 'block';
-            });
-        });
-    </script>
 </body>
 </html>
