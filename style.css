@@ -15,11 +15,27 @@ header {
     padding: 20px;
 }
 
-h1, h2 {
+h1{
+    font-family: 'Silkscreen', sans-serif;
+    font-size: 60px;
+    color: aquamarine;
+}
+
+h2 {
     font-family: 'Silkscreen', sans-serif;
     font-size: 48px;
 }
 
+.navigation {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.navigation.show {
+    opacity: 1;
+}
+
+/* Your existing styles for navigation */
 nav ul {
     text-align: center;
     margin: 20px 0;
@@ -34,51 +50,65 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 8px 20px;
+    border: 1px solid #333;
+    border-radius: 5px;
     margin: 0 5px;
-    border: 1px solid #000;
     background-color: pink;
-    color: #000;
+    color: #333;
+    transition: all 0.3s ease;
 }
 
 nav ul li a:hover {
-    background-color: palevioletred;
+    background-color: aquamarine;
     color: #333;
+}
+
+.active {
+    background-color: #333;
+    color: pink;
 }
 
 .dropdown {
     display: none;
     position: absolute;
-    background-color: pink;
+    background-color: aquamarine;
+    border: 1px solid #333; /* Changed border color */
     min-width: 120px;
     z-index: 1;
+    border-radius: 5px;
 }
 
 .dropdown a {
     display: block;
     padding: 10px;
     text-decoration: none;
-    color: #000;
+    color: #333;
+    transition: all 0.3s ease;
 }
 
 .dropdown a:hover {
-    background-color: palevioletred;
+    background-color: aquamarine; 
+    color: #333; 
 }
 
 nav ul li:hover .dropdown {
     display: block;
 }
 
-.active {
-    background-color: #333;
-    color: pink;
-  }
 
 .container {
+    position: relative;
     margin: 20px;
     background-color: #333;
     padding: 10px 0;
     text-align: center;
+    opacity: 0; 
+    transition: opacity 0.5s ease-in-out;
+}
+
+.container.show {
+    opacity: 1;
 }
 
 .bio, .music, .contact, .bts, .teasers {
