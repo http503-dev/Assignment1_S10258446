@@ -18,7 +18,12 @@ header {
 h1{
     font-family: 'Silkscreen', sans-serif;
     font-size: 60px;
-    color: aquamarine;
+    color: pink;
+    text-shadow:
+        3px 3px 0 #000,
+        -3px 3px 0 #000,
+        -3px -3px 0 #000,
+        3px -3px 0 #000;
 }
 
 h2 {
