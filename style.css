@@ -1,4 +1,4 @@
-
+/* Main body style */
 body {
     font-family: 'VT323', monospace;
     font-size: 30px;
@@ -31,6 +31,7 @@ h2 {
     font-size: 48px;
 }
 
+/* Navigation and dropdown button stylings */
 .navigation {
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
@@ -40,7 +41,6 @@ h2 {
     opacity: 1;
 }
 
-/* Your existing styles for navigation */
 nav ul {
     text-align: center;
     margin: 20px 0;
@@ -101,7 +101,7 @@ nav ul li:hover .dropdown {
     display: block;
 }
 
-
+/* Black background for content */
 .container {
     position: relative;
     margin: 20px;
@@ -117,6 +117,7 @@ nav ul li:hover .dropdown {
     opacity: 1;
 }
 
+/* Main content alignment */
 .bio, .music, .contact, .bts, .teasers {
     text-align: center;
     margin: 20px;
@@ -125,6 +126,7 @@ nav ul li:hover .dropdown {
 
 }
 
+/* Footer alignment */
 footer {
     text-align: center;
     padding: 20px;
@@ -133,7 +135,7 @@ footer {
     width: auto;
 }
 
-
+/* Contact Info Buttons stylings*/
 .social-buttons {
     text-align: center;
     margin-top: 20px;
@@ -154,12 +156,16 @@ footer {
     color: #333;
 }
 
+/* Image for Teasers page to enable media query */
 .teasers > img{
     width: 400px; 
     height: auto;
 }
 
+/* MEDIA QUERY */
 @media screen and (max-width: 800px){
+
+    /* Nav buttons change positions/layout */
     nav ul li {
         display: flex;
         position: relative;
@@ -175,6 +181,7 @@ footer {
         font-size: 42px;
     }
 
+    /* teaser images now responsive */
     .teasers > img{
         width: 100%; 
         height: auto;
