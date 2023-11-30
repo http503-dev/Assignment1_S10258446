@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>http503 Contact Info Page</title>
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
-    <script src="scripts.js"></script>
 
     <!-- Header font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,7 +22,7 @@
 
 <body>
     <header>
-        <!-- Logo -->
+        <!-- Logo & Header -->
         <img src="logo.png" alt="Your Logo" width="400">
         <h1>CONTACT INFORMATION</h1>
     </header>
@@ -31,6 +33,7 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="music.html">Music</a></li>
             <li><a href="contact.html"  class="active">Contact</a></li>
+            <!-- Dropdown Menu -->
             <li>
                 <a href="#" class="dropdown-trigger">Extras</a>
                 <div class="dropdown">
@@ -41,26 +44,28 @@
         </ul>
     </nav>
 
-    <div class="container">
-        <!-- Contact Info -->
-        <div class="contact">
-            <h2>Want to reach me?</h2>
-            <p>You can contact me at my email: placeholderemail@email.com <br> or online through my social media:</p>
-            <div class="social-buttons">
-                <!-- Social media buttons -->
-                <a href="https://www.instagram.com/http503wastaken/" target="_blank">Instagram</a>
-                <a href="https://www.youtube.com/channel/UCmmdcGx6xm9Sx3KFDd6jQHQ" target="_blank">YouTube</a>
+    <main>
+        <div class="container">
+            <!-- Contact Info -->
+            <div class="contact">
+                <h2>Want to reach me?</h2>
+                <p>You can contact me at my email: placeholderemail@email.com <br> or online through my social media:</p>
+                <div class="social-buttons">
+                    <!-- Social media buttons -->
+                    <a href="https://www.instagram.com/http503wastaken/" target="_blank">Instagram</a>
+                    <a href="https://www.youtube.com/channel/UCmmdcGx6xm9Sx3KFDd6jQHQ" target="_blank">YouTube</a>
+                </div>
             </div>
         </div>
-    </div>
-    
-
-
+    </main>
 
     <footer>
         <!-- Footer content -->
         <p>&copy; seriously who would steal this</p>
     </footer>
+
+    <!-- Loading js file-->
+    <script src="scripts.js"></script> 
 
 </body>
 </html>

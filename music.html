@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>http503 Music Page</title>
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
-    <script src="scripts.js"></script>
 
     <!-- Header font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,62 +22,74 @@
 
 <body>
     <header>
-        <!-- Logo -->
+        <!-- Header -->
         <h1>MUSIC</h1>
     </header>
 
-    <nav class="navigation">
-        <!-- Navigation bar buttons -->
-        <ul class="nav-list">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="music.html" class="active">Music</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li>
-                <a href="#" class="dropdown-trigger">Extras</a>
-                <div class="dropdown">
-                    <a href="behindthescenes.html">Behind the Scenes</a>
-                    <a href="teasers.html">Teasers</a>
+    <main>
+        <nav class="navigation">
+            <!-- Navigation bar buttons -->
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="music.html" class="active">Music</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <!-- Dropdown Menu -->
+                <li>
+                    <a href="#" class="dropdown-trigger">Extras</a>
+                    <div class="dropdown">
+                        <a href="behindthescenes.html">Behind the Scenes</a>
+                        <a href="teasers.html">Teasers</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="container">
+            <!-- Music -->
+            <div class="music">
+                <h2>Get ready for some mediocre music!</h2>
+                <div>
+                    <h3>Buddy Holly Cover with my band</h3>
+                    <video width="100%" height="auto" controls>
+                        <source src="Buddy Holly cover.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
-            </li>
-        </ul>
-    </nav>
+                
+                <div>
+                    <h3>Song 2 cover with my band</h3>
+                    <video width="100%" height="auto" controls>
+                        <source src="Song 2 cover.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
 
-    <div class="container">
-        <!-- Music -->
-        <div class="music">
-            <h2>Get ready for some mediocre music!</h2>
-            <h3>Buddy Holly Cover with my band</h3>
-            <video width="100%" height="auto" controls>
-                <source src="Buddy Holly cover.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            
-            <h3>Song 2 cover with my band</h3>
-            <video width="100%" height="auto" controls>
-                <source src="Song 2 cover.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            
-            <h3>Smells Like Teen Spirit cover with my band</h3>
-            <video width="100%" height="auto" controls>
-                <source src="Smells Like Teen Spirit.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            
-            <h3>Something fun I made for my birthday</h3>
-            <video width="100%" height="auto" controls>
-                <source src="birthday joke video.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+                <div>
+                <h3>Smells Like Teen Spirit cover with my band</h3>
+                <video width="100%" height="auto" controls>
+                    <source src="Smells Like Teen Spirit.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                </div>
+
+                <div>
+                    <h3>Something fun I made for my birthday</h3>
+                    <video width="100%" height="auto" controls>
+                        <source src="birthday joke video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
         </div>
-    </div>
-    
-
-
+    </main>
 
     <footer>
         <!-- Footer content -->
         <p>&copy; copyright lololololol</p>
     </footer>
+
+    <!-- Loading js file-->
+    <script src="scripts.js"></script> 
+
 </body>
 </html>

@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>http503 Home Page</title>
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
-    <script src="scripts.js"></script> 
     
     <!-- Header font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,42 +26,45 @@
         <img src="logo.png" alt="Your Logo" width="400">
     </header>
 
-    <nav class="navigation">
-        <!-- Navigation bar buttons -->
-        <ul class="nav-list">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="music.html">Music</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li>
-                <a href="#" class="dropdown-trigger">Extras</a>
-                <div class="dropdown">
-                    <a href="behindthescenes.html">Behind the Scenes</a>
-                    <a href="teasers.html">Teasers</a>
-                </div>
-            </li>
-        </ul>
-    </nav>
+    <main>
+        <nav class="navigation">
+            <!-- Navigation bar buttons -->
+            <ul class="nav-list">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="music.html">Music</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <!-- Dropdown Menu -->
+                <li>
+                    <a href="#" class="dropdown-trigger">Extras</a>
+                    <div class="dropdown">
+                        <a href="behindthescenes.html">Behind the Scenes</a>
+                        <a href="teasers.html">Teasers</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
 
-    <div class="container">
-        <!-- Biography -->
-        <div class="bio">
-            <h2>Biography</h2>
-            <p>Hello! My name is Farhan but you may call me http503. I'm currently studying game design but I moonlight as a bassist (one of my truer passions).
-                 I don't really know what I'm doing but don't let that deter you from joining me on this journey. This website will be where I post my 
-                 musical escapades where melodies meet moments and rhythms paint emotions. You'll see a lot of covers of my favourite bands (mostly Weezer) and
-                 stuff with my band 'anything' which you can (and will) follow <a href="https://www.instagram.com/anny.thinng/" target="_blank">here</a>.
-                 
-            </p>
+        <div class="container">
+            <!-- Biography -->
+            <div class="bio">
+                <h2>Biography</h2>
+                <p>Hello! My name is Farhan but you may call me http503. I'm currently studying game design but I moonlight as a bassist (one of my truer passions).
+                    I don't really know what I'm doing but don't let that deter you from joining me on this journey. This website will be where I post my 
+                    musical escapades where melodies meet moments and rhythms paint emotions. You'll see a lot of covers of my favourite bands (mostly Weezer) and
+                    stuff with my band 'anything' which you can (and will) follow <a href="https://www.instagram.com/anny.thinng/" target="_blank">here</a>.
+                    
+                </p>
+            </div>
         </div>
-    </div>
-    
-
-
+    </main>
 
     <footer>
         <!-- Footer content -->
         <p>&copy; lmao copyright</p>
     </footer>
-</body>
 
+    <!-- Loading js file-->
+    <script src="scripts.js"></script>
+
+</body>
 </html>
