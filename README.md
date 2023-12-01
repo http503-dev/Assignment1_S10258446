@@ -14,6 +14,7 @@ User Stories:
 
 Link to the wireframes for this project:
 https://xd.adobe.com/view/ce8cbbff-3bc8-4e1a-bcb1-100aa55d16bf-9bdf/
+or you can find the file in the repository.
 
 ## Features
 
