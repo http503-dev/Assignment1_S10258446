@@ -162,6 +162,11 @@ footer {
     height: auto;
 }
 
+.music > video{
+    width: 100%;
+    height: auto;
+}
+
 /* MEDIA QUERY */
 @media screen and (max-width: 800px){
 
